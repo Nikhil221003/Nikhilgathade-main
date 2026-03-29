@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikhil Narayan Gathade — Data Enthusiast</title>
+  <meta name="description"
+    content="Nikhil Narayan Gathade — Data Enthusiast Data Enthusiast with a Bachelor of Computer Science, seeking an entry-level opportunity to apply Python, SQL, and analytical skills in real-world data-driven environments while continuously learning and growing." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- AOS Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ░░ LOADING SCREEN ░░ -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">NG</div>
+      <div class="loader-bar">
+        <div class="loader-fill"></div>
+      </div>
+      <div class="loader-text">Initializing Portfolio...</div>
+    </div>
+  </div>
+
+  <!-- ░░ CURSOR ░░ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>NG<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-sun" id="themeIcon"></i>
+        </button>
+        <a href="assets/Nikhil_Gathade_Resume.pdf" download class="btn-resume">
+          <i class="fas fa-download"></i> Resume
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ░░ HERO ░░ -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-container">
+      <div class="hero-badge" data-aos="fade-down">
+        <span class="badge-dot"></span> Open to opportunities
+      </div>
+      <h1 class="hero-name" data-aos="fade-up" data-aos-delay="100">
+        Nikhil<br /><span class="name-accent">Gathade</span>
+      </h1>
+      <div class="hero-typing-wrap" data-aos="fade-up" data-aos-delay="200">
+        <span class="typing-prefix">I am a </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-value" data-aos="fade-up" data-aos-delay="300">
+        Data Enthusiast with a Bachelor of Computer Science, seeking an entry-level opportunity to apply Python, SQL,<br />and analytical skills in real-world data-driven environments while continuously learning and growing.
+      </p>
+      <div class="hero-ctas" data-aos="fade-up" data-aos-delay="400">
+        <a href="#projects" class="btn-primary">
+          <span>View Projects</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="assets/Nikhil_Gathade_Resume.pdf" download
+          class="btn-secondary">
+          <i class="fas fa-download"></i>
+          <span>Download Resume</span>
+        </a>
+        <a href="#contact" class="btn-ghost">
+          <span>Contact Me</span>
+        </a>
+      </div>
+      <div class="hero-socials" data-aos="fade-up" data-aos-delay="500">
+        <a href="https://github.com/Nikhil221003" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/nikhil-gathade-0a8395239" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:nikhilgathade59@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+      <div class="hero-scroll-hint" data-aos="fade-up" data-aos-delay="600">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll to explore</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ ABOUT ░░ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">01 / About</span>
+        <h2 class="section-title">Who <em>I Am</em></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual" data-aos="fade-right">
+          <div class="about-avatar-wrap">
+            <div class="about-avatar-bg"></div>
+            <div class="about-avatar">
+              <img src="assets/profile.png" alt="Nikhil Gathade" class="avatar-photo" />
+            </div>
+            <div class="about-badge-float">
+              <span>🟢</span> Data Enthusiast
+            </div>
+          </div>
+          <div class="about-quick-stats">
+            <div class="qs-item">
+              <span class="qs-num">2+</span>
+              <span class="qs-txt">Projects</span>
+            </div>
+            <div class="qs-item">
+              <span class="qs-num">284K</span>
+              <span class="qs-txt">Records Analyzed</span>
+            </div>
+            <div class="qs-item">
+              <span class="qs-num">12+</span>
+              <span class="qs-txt">Tools</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content" data-aos="fade-left">
+          <p class="story-intro">A data enthusiast who believes every dataset tells a story — <em>you just need the
+              right tools to read it.</em></p>
+
+          <!-- Intro + Code Card side by side -->
+          <div class="about-intro-row">
+            <div class="about-story">
+              <p>I'm an aspiring Data Enthusiast who builds end-to-end solutions. My work
+                combines <strong>statistical rigour</strong> with machine learning to extract actionable insights from
+                complex, real-world datasets.</p>
+              <p>From detecting financial fraud in <em>284K+ transactions</em> to building executive Power BI dashboards
+                — I focus on work that has real business impact, not just impressive numbers.</p>
+            </div>
+            <div class="about-code-card data-card">
+              <div class="data-card-header">
+                <span class="dc-dot red"></span>
+                <span class="dc-dot yellow"></span>
+                <span class="dc-dot green"></span>
+                <span class="dc-title">finsight.py</span>
+              </div>
+              <pre class="data-card-code"><span class="c-kw">import</span> pandas <span class="c-kw">as</span> pd
+<span class="c-kw">from</span> sklearn.ensemble <span class="c-kw">import</span> RandomForest
+
+df = pd.read_csv(<span class="c-str">'transactions.csv'</span>)
+<span class="c-cm"># 284,807 transactions</span>
+
+model = RandomForest(
+  n_estimators=<span class="c-num">100</span>,
+  class_weight=<span class="c-str">'balanced'</span>
+)
+model.fit(X_train, y_train)
+
+<span class="c-cm"># Precision: 98.7% ✓</span>
+<span class="c-cm"># ROC-AUC: 0.908 ✓</span></pre>
+              <div class="data-card-stats">
+                <div class="dc-stat"><span class="dc-val">98.7%</span><span class="dc-lbl">Precision</span></div>
+                <div class="dc-stat"><span class="dc-val">0.908</span><span class="dc-lbl">ROC-AUC</span></div>
+                <div class="dc-stat"><span class="dc-val">284K</span><span class="dc-lbl">Records</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight-chip"><i class="fas fa-bolt"></i> Fast Learner — production-grade ML from scratch
+            </div>
+            <div class="highlight-chip"><i class="fas fa-bullseye"></i> Business Focused — data into decisions</div>
+            <div class="highlight-chip"><i class="fas fa-flask"></i> Statistically Rigorous — p-values, proper metrics
+            </div>
+            <div class="highlight-chip"><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra</div>
+            <div class="highlight-chip"><i class="fas fa-phone"></i> +917620843938</div>
+          </div>
+          <div style="margin-top: 28px;">
+            <a href="assets/Nikhil_Gathade_Resume.pdf" download
+              class="btn-primary">
+              <i class="fas fa-download"></i> Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ░░ SKILLS ░░ -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">02 / Skills</span>
+        <h2 class="section-title">Tools I Use to<br /><em>Decode Data</em></h2>
+      </div>
+      <div class="skills-filter" data-aos="fade-up">
+        <button class="skill-filter-btn active" data-filter="all">All</button>
+        <button class="skill-filter-btn" data-filter="programming">Programming</button>
+        <button class="skill-filter-btn" data-filter="analysis">Analysis</button>
+        <button class="skill-filter-btn" data-filter="visualization">Visualization</button>
+        <button class="skill-filter-btn" data-filter="database">Database</button>
+        <button class="skill-filter-btn" data-filter="ml">Machine Learning</button>
+      </div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ░░ PROJECTS ░░ -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">03 / Projects</span>
+        <h2 class="section-title">Real Problems,<br /><em>Real Solutions</em></h2>
+      </div>
+      <div class="project-filter-wrap" data-aos="fade-up">
+        <button class="proj-filter active" data-cat="all">All</button>
+        <button class="proj-filter" data-cat="ml">ML / AI</button>
+        <button class="proj-filter" data-cat="data">Data Analysis</button>
+        <button class="proj-filter" data-cat="app">Applications</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ░░ PROJECT MODAL ░░ -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="projectModal">
+      <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- ░░ DASHBOARD SHOWCASE ░░ -->
+  <section class="dashboard-showcase" id="dashboard">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">04 / Preview</span>
+        <h2 class="section-title">Dashboard <em>Showcase</em></h2>
+      </div>
+      <div class="carousel-wrap" data-aos="fade-up">
+        <div class="carousel" id="carousel">
+          <div class="carousel-slide active">
+            <div class="dash-placeholder">
+              <div class="dash-mock">
+                <div class="dash-header">FinSight — Financial Anomaly Detection Dashboard</div>
+                <div class="dash-kpis">
+                  <div class="kpi-card"><span class="kpi-val">283.73K</span><span class="kpi-lbl">Total
+                      Transactions</span></div>
+                  <div class="kpi-card red"><span class="kpi-val">490</span><span class="kpi-lbl">Anomalies
+                      Detected</span></div>
+                  <div class="kpi-card amber"><span class="kpi-val">14.63</span><span class="kpi-lbl">Avg Risk
+                      Score</span></div>
+                </div>
+                <div class="dash-charts">
+                  <div class="chart-box">
+                    <div class="chart-title">Risk Score Distribution</div>
+                    <div class="bar-chart">
+                      <div class="bar" style="height:90%"></div>
+                      <div class="bar" style="height:60%"></div>
+                      <div class="bar red" style="height:75%"></div>
+                      <div class="bar" style="height:45%"></div>
+                      <div class="bar red" style="height:85%"></div>
+                      <div class="bar" style="height:30%"></div>
+                      <div class="bar red" style="height:95%"></div>
+                    </div>
+                  </div>
+                  <div class="chart-box">
+                    <div class="chart-title">Fraud vs Normal</div>
+                    <div class="donut-wrap">
+                      <svg viewBox="0 0 100 100" class="donut-svg">
+                        <circle cx="50" cy="50" r="35" fill="none" stroke="#1d9e75" stroke-width="18"
+                          stroke-dasharray="219.9 0.1" />
+                        <circle cx="50" cy="50" r="35" fill="none" stroke="#e74c3c" stroke-width="18"
+                          stroke-dasharray="0.4 219.6" stroke-dashoffset="-219.5" />
+                      </svg>
+                      <div class="donut-label">99.83%<br /><small>Normal</small></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="slide-caption">FinSight Power BI Dashboard — Live MySQL Connection</p>
+          </div>
+          <div class="carousel-slide">
+            <div class="dash-placeholder">
+              <div class="dash-mock model-mock">
+                <div class="dash-header">Model Performance Comparison</div>
+                <div class="model-table">
+                  <div class="model-row header">
+                    <span>Model</span><span>Precision</span><span>Recall</span><span>F1</span><span>ROC-AUC</span>
+                  </div>
+                  <div class="model-row">
+                    <span>Isolation Forest</span><span>0.52</span><span>0.63</span><span>0.57</span><span>N/A</span>
+                  </div>
+                  <div class="model-row highlight">
+                    <span>Logistic Regression</span><span>0.94</span><span class="best">0.82
+                      ★</span><span>0.876</span><span class="best">0.908 ★</span>
+                  </div>
+                  <div class="model-row highlight2">
+                    <span>Random Forest</span><span class="best">0.987 ★</span><span>0.81</span><span class="best">0.890
+                      ★</span><span>0.905</span>
+                  </div>
+                </div>
+                <div class="insight-box">💡 In fraud detection, Recall is more critical than Accuracy — missing a fraud
+                  costs real money.</div>
+              </div>
+            </div>
+            <p class="slide-caption">ML Model Comparison — Precision, Recall, F1, ROC-AUC</p>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="car-btn" id="car-prev">←</button>
+          <div class="car-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+          </div>
+          <button class="car-btn" id="car-next">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ METRICS ░░ -->
+  <section class="metrics" id="metrics">
+    <div class="container">
+      <div class="metrics-grid" id="metricsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ░░ EXPERIENCE ░░ -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">05 / Experience</span>
+        <h2 class="section-title">Where I've<br /><em>Sharpened My Craft</em></h2>
+      </div>
+      <div class="timeline" data-aos="fade-up">
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-line"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div class="tl-org">
+                <div class="tl-org-icon"><i class="fas fa-laptop-code"></i></div>
+                <div>
+                  <h3 class="tl-title">Data Science and Analytics Training</h3>
+                  <span class="tl-company">Seven Mentor IT Training Institute</span>
+                </div>
+              </div>
+              <span class="tl-period">2025 – 2026</span>
+            </div>
+            <p class="tl-desc">Completed an intensive, hands-on Data Science program covering the full analytics
+              pipeline — from data wrangling to model deployment. Worked on real datasets and built production-grade
+              projects.</p>
+            <div class="tl-skills">
+              <span>Python</span><span>MySQL</span><span>Power-BI</span><span>Machine
+                Learning</span><span>Pandas</span><span>NumPy</span><span>Stats &
+                Probability</span><span>Scikit-learn</span>
+            </div>
+            <div class="tl-highlights">
+              <div class="tlh-item"><i class="fas fa-angle-right"></i> Worked on multiple real-world projects focused
+                on data analysis and problem solving</div>
+              <div class="tlh-item"><i class="fas fa-angle-right"></i> Created dashboards and visual reports for
+                effective data storytelling</div>
+              <div class="tlh-item"><i class="fas fa-angle-right"></i> Hands-on experience with complete machine
+                learning lifecycle</div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div class="tl-org">
+                <div class="tl-org-icon"><i class="fas fa-university"></i></div>
+                <div>
+                  <h3 class="tl-title">Bachelor of Computer Science (B.sc)</h3>
+                  <span class="tl-company">Pune</span>
+                </div>
+              </div>
+              <span class="tl-period">2022 – 2025</span>
+            </div>
+            <p class="tl-desc">
+              Built a solid foundation in computer science and programming, strengthening analytical thinking and structured problem-solving.
+            </p>
+            <div class="tl-skills">
+              <span>Python</span><span>Data Structures</span><span>SQL</span>
+            </div>
+            <div class="tl-highlights">
+              <div class="tlh-item"><i class="fas fa-angle-right"></i> Built a strong foundation in programming and computer science.</div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div class="tl-org">
+                <div class="tl-org-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div>
+                  <h3 class="tl-title">HSC (Science)</h3>
+                </div>
+              </div>
+              <span class="tl-period">2022</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div class="tl-org">
+                <div class="tl-org-icon"><i class="fas fa-school"></i></div>
+                <div>
+                  <h3 class="tl-title">SSC</h3>
+                </div>
+              </div>
+              <span class="tl-period">2020</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CONTACT ░░ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">06 / Contact</span>
+        <h2 class="section-title">Let's Build<br /><em>Something Together</em></h2>
+        <p class="section-sub">Open for Data Enthusiast roles, internships, and freelance data projects.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-card">
+            <a href="mailto:nikhilgathade59@gmail.com" class="contact-item">
+              <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+              <div class="ci-text">
+                <span class="ci-label">Email</span>
+                <span class="ci-val">nikhilgathade59@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://github.com/Nikhil221003" target="_blank" rel="noopener" class="contact-item">
+              <div class="ci-icon"><i class="fab fa-github"></i></div>
+              <div class="ci-text">
+                <span class="ci-label">GitHub</span>
+                <span class="ci-val">github.com/Nikhil221003</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/nikhil-gathade-0a8395239" target="_blank" rel="noopener" class="contact-item">
+              <div class="ci-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div class="ci-text">
+                <span class="ci-label">LinkedIn</span>
+                <span class="ci-val">linkedin.com/in/nikhil-gathade-0a8395239</span>
+              </div>
+            </a>
+          </div>
+          <div class="contact-availability">
+            <span class="avail-dot pulse"></span>
+            Currently available for opportunities
+          </div>
+        </div>
+        <div class="contact-form-wrap" data-aos="fade-left">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cName">Your Name</label>
+                <input type="text" id="cName" name="name" placeholder="Jane Smith" required />
+                <span class="form-error" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="cEmail">Email Address</label>
+                <input type="email" id="cEmail" name="email" placeholder="jane@company.com" required />
+                <span class="form-error" id="emailError"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cSubject">Subject</label>
+              <input type="text" id="cSubject" name="subject" placeholder="Regarding Data Enthusiast Role..." />
+            </div>
+            <div class="form-group">
+              <label for="cMessage">Message</label>
+              <textarea id="cMessage" name="message" rows="5" placeholder="Tell me about the opportunity..."
+                required></textarea>
+              <span class="form-error" id="msgError"></span>
+            </div>
+            <button type="submit" class="btn-primary form-submit" id="formSubmit">
+              <span id="submitText">Send Message</span>
+              <i class="fas fa-paper-plane" id="submitIcon"></i>
+            </button>
+            <div class="form-feedback" id="formFeedback"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <a href="#hero" class="footer-logo">
+            <span class="logo-bracket">&lt;</span>NG<span class="logo-bracket">/&gt;</span>
+          </a>
+          <p class="footer-tagline">Turning raw data into<br />real-world decisions.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/Nikhil221003" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/nikhil-gathade-0a8395239" target="_blank" rel="noopener"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:nikhilgathade59@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Nikhil Narayan Gathade</span><br>
+        <span>Made with ❤️ & ☕</span><br>
+        <span>Built to convert, not just impress.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ░░ BACK TO TOP ░░ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- AOS + Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
