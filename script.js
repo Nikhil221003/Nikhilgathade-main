@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
 });
 
 /**
- * ADITYA BOBADE — PORTFOLIO SCRIPT
+ * NIKHIL GATTHADE — PORTFOLIO SCRIPT
  * Data Enthusiast | Digital Noir Portfolio
  * -----------------------------------------------
  * Sections:
